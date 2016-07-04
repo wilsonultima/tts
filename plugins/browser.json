@@ -13,6 +13,9 @@
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.timetosports"
         },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.timetosports"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.timetosports"
         },
@@ -47,9 +50,6 @@
             "PACKAGE_NAME": "com.timetosports"
         },
         "cordova-plugin-media": {
-            "PACKAGE_NAME": "com.timetosports"
-        },
-        "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.timetosports"
         },
         "cordova-plugin-network-information": {
