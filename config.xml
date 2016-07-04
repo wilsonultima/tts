@@ -1,6 +1,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.timetosports" version="1.0.0">
   <name>Time To Sports</name>
-  <description>Time To Sports Trouver une partie!</description>
+  <description>Time To Sports Trouver une partie!22</description>
   <author href="http://www.ultimawebcreation.com" email="info@ultimawebcreation.ca">Ultima Web Creation</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
