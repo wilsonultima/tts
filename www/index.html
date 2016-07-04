@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="en">
+	<style>
+	html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+	</style>
     <head>
         <meta charset="utf-8" />
         <title>Time To Sports</title>
@@ -8,66 +11,14 @@
 		<meta name="msapplication-tap-highlight" content="no" />
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
-        <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/pages/css/login-4.css" rel="stylesheet" type="text/css" />
+	</head>
 
-    <body class=" login">
+    <body style="margin:0px" width="100%" height="100%">
 		<video id="videointro" width="100%" height="100%" autoplay>
 		  <source src="assets/pages/media/ttsintro.mp4" type="video/mp4">
 		</video>
-		<div id="logintts" style="display:none">
-			<div class="content">
-				<form class="login-form" action="index.html" method="post">
-					<h3 class="form-title">Login to your account</h3>
-					<div class="alert alert-danger display-hide">
-						<button class="close" data-close="alert"></button>
-						<span> Enter any username and password. </span>
-					</div>
-					<div class="form-group">
-						<label class="control-label visible-ie8 visible-ie9">Username</label>
-						<div class="input-icon">
-							<i class="fa fa-user"></i>
-							<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username" /> </div>
-					</div>
-					<div class="form-group">
-						<label class="control-label visible-ie8 visible-ie9">Password</label>
-						<div class="input-icon">
-							<i class="fa fa-lock"></i>
-							<input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" /> </div>
-					</div>
-					<div class="form-actions">
-						<label class="rememberme mt-checkbox mt-checkbox-outline">
-							<input type="checkbox" name="remember" value="1" /> Remember me
-							<span></span>
-						</label>
-						<button type="submit" class="btn green pull-right"> Login </button>
-					</div>
-
-				</form>
-			</div>
-			<div class="copyright"> 2014 &copy; Metronic - Admin Dashboard Template. </div>
-		</div>
         <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
         <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
-        <script src="assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
-		<script src="assets/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
-        <script src="assets/global/scripts/app.min.js" type="text/javascript"></script>
-        <script src="assets/pages/scripts/login-4.js" type="text/javascript"></script>
 		
 		
 		
@@ -79,8 +30,7 @@
 		<script type="text/javascript">
 			setTimeout(function(){ 
 			document.getElementById("videointro").style.display = 'none';
-			document.getElementById("logintts").style.display = 'block';
-			},6000);
+			},550000);
 		</script>
 		
     </body>
