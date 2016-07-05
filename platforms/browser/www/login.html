@@ -83,6 +83,16 @@
     {
         screen.lockOrientation('portrait');
     }
+	document.addEventListener("deviceready", onDeviceReady2, false);
+		function onDeviceReady2() { 
+			document.addEventListener("backbutton", function (e) 
+			{
+				e.preventDefault(); 
+				}, false ); 
+			}
+
+
+
 </script>
 </body>
 
