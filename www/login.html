@@ -24,11 +24,6 @@
 <div class="share-bottom-tap-close"></div>
 <div class="menu-tap-close light-close"></div> 
     
-    
-<script type="text/javascript">
-	screen.lockOrientation('portrait');
-	screen.unlockOrientation();
-</script>
 
 <div id="page-content">
     <div id="page-content-scroll">
@@ -67,11 +62,13 @@
     </div>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="cordova_plugins.js"></script>
+
 <script type="text/javascript">
 	app.initialize();
 </script>	
 <script type="text/javascript">
+alert(JSON.stringify(screen.orientation));
 	screen.lockOrientation('portrait');
 	screen.unlockOrientation();
 </script>
