@@ -1,92 +1,3 @@
-/* Framework.CSS*/
-/*
-
-    Template Name:      Enabled Mobile & Tablet Templates
-    Theme URL:          http://enableds.com
-    Author:             Enabled
-    Author URI:         http://themeforest.net/user/Enabled?ref=Enabled 
-    Author Facebook:    https://www.facebook.com/enabled.labs
-    Author Twitter:     https://twitter.com/iEnabled
-    Version:            4.0
-    License:            Regular or Extended via ThemeForest
-    Plugin Licenses:    GPL / MIT - Redistribution Allowed
-    Structure:          Each chapter from the structure can be located using 
-                        CTRL + F ( Windows ) or CMD + F ( Mac ) The titles are
-                        copy pasted as they are in the code. 
-    
-    Description:        The framework is built into one single CSS file to allow the template
-                        universal, fast access to all the items. As -webkit- browsers cache the
-                        CSS on load, this asures best loading times on all platforms and at the
-                        same time asures you will find everything you need in one single place. 
-
-                        The style.css is built for individual features of templates. All the core
-                        elements of the CSS are located in framework.css and chaptered as added
-                        below. 
-
-                        Please Note! Not following the structure presented in the documentation
-                        or altering the framework.css without proper experience can lead to the 
-                        item malfunctioning. We are not responsible for any edits you make outside
-                        the as is item. All features of this CSS are explained in the second help
-                        documentation file provided in the pack with the item purchased!
-
-    Structure:
-                        
-    01. Reset 
-    02. Typography
-    03. Background and Text Colors
-    04. Heading Settings
-    05. Lists and Font Icon Lists
-    06. Table Settings
-    07. Checkbox and Radios
-    08. Image and Video Settings
-    09. Content Classes and Responsive Settings
-    10. Animated Back to Top Badge
-    11. Share Bottom
-    12. Dropcaps
-    13. Blockquotes and Reviews
-    14. Mobile Style Switches
-    15. Toggles
-    16. Accordion
-    17. Tabs
-    18. Notifications
-    19. Device Detection
-    20. Buttons
-    21. Login Buttons
-    22. Speach Bubbles
-    23. Galleries
-    24. Filter Portfolio
-    25. Adaptive Portfolio
-    26. One Item Portfolio
-    27. Two Item Portfolio
-    28. Portfolio Wide
-    29. Filter Portfolio
-    30. Calendar Design
-    31. Charts
-    32. Profile Page
-    33. Activity Page
-    34. Fullscreen Pages
-    35. Page Login
-    36. Pageapp Login
-    37. Coverpage Slider
-    38. Tasklists
-    39. Checklists
-    40. Reminders
-    41. Timeline 1
-    42. Timeline 2
-    43. Store Template
-    44. Sitemap Page
-    45. News Elements
-    46. Blog Template
-    47. Full Map
-    48. Page Contact
-    49. Carousel Plugin
-    50. Justified Gallery Plugin
-    51. Gallery Plugin
-    52. Sidebar Settings
-*/
-
-
-/*----Reset----*/ 
 * {
 	margin: 0;
 	padding: 0;
@@ -2320,7 +2231,7 @@ ul.tabs li.active-tab{
 .button-teal:hover{		background-color:#1abc9c;}
 
 .green-3d{				padding-top:5px; padding-bottom:5px; border-bottom:solid 4px #1e8248;}
-.button-green{			background-color:#27ae60; color:#FFFFFF;}
+.button-green{			background-color:#009B00; color:#FFFFFF;}
 .button-green:hover{	background-color:#2ecc71;}
 
 .blue-3d{				padding-top:5px; padding-bottom:5px; border-bottom:solid 4px #194e70;}
@@ -3827,7 +3738,7 @@ calendar*{
 }
 
 .cover-page .overlay{
-    background-color:rgba(0,0,0,0.8);
+    background-color: rgba(255,255,255,0.1);
     position:fixed;
     top:0px;
     left:0px;
@@ -4115,7 +4026,7 @@ calendar*{
     float:right;
     text-align:right;
     font-size:12px;
-    color:rgba(0,0,0,0.5);
+    color:white;
     margin-bottom:30px;
     transition:all 250ms ease;
 }
@@ -4125,7 +4036,7 @@ calendar*{
     float:left;
     text-align:left;
     font-size:12px;
-    color:rgba(0,0,0,0.5);
+    color:white;
     margin-bottom:30px;
     transition:all 250ms ease;
 }
@@ -4147,14 +4058,14 @@ calendar*{
 
 @media(min-width:331px){
     .pageapp-login .pageapp-login-logo{
-        width:130px;
+        width:200px;
         height:100px;
-        background-size:130px 100px;
+        background-size:200px 100px;
     }
 }
 
 .pageapp-login .pageapp-login-logo{
-    background-image:url(../images/pages-logo-light.png);
+    background-image:url(../images/tts.png);
     margin-left:auto;
     margin-right:auto;
     margin-bottom:20px;
@@ -4165,7 +4076,7 @@ calendar*{
 }
 
 .cover-field input{
-    border-bottom:solid 1px rgba(255,255,255,0.15);
+    border-bottom: solid 1px rgba(255,255,255,1);
     background-color:transparent;
     color:#FFFFFF;
     width:100%;
@@ -4202,7 +4113,7 @@ calendar*{
     line-height:45px;
     text-align:center;
     width:45px;
-    opacity:0.5;
+    opacity:1;
 }
 
 .pageapp-login-button{
