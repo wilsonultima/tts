@@ -55,6 +55,9 @@
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.timetosports"
         },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.timetosports"
+        },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.timetosports"
         },
@@ -65,9 +68,6 @@
             "PACKAGE_NAME": "com.timetosports"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.timetosports"
-        },
-        "cordova-plugin-screen-orientation": {
             "PACKAGE_NAME": "com.timetosports"
         }
     },
