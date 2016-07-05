@@ -32,6 +32,11 @@
 			{
 				screen.lockOrientation('landscape');
 			}
+			document.addEventListener("deviceready", onDeviceReady2, false);
+			function onDeviceReady2()
+			{
+				StatusBar.hide;
+			}
 		</script>
 		<script type="text/javascript">
 			setTimeout(function(){ 
