@@ -102,6 +102,7 @@ a > span {
 a {
     color:#2980b9;
 	text-decoration: none;
+	transition: all 0.8s;
 }
 
 a:hover {
@@ -4002,7 +4003,7 @@ calendar*{
 .page-login .login-forgot:hover,
 .page-login .login-create:hover,
 .page-login .login-already:hover{
-    color:#2e8ece;
+    color:white;
     transition:all 250ms ease;
 }
 
@@ -4058,9 +4059,9 @@ calendar*{
 
 @media(min-width:331px){
     .pageapp-login .pageapp-login-logo{
-        width:200px;
+        width:230px;
         height:100px;
-        background-size:200px 100px;
+        background-size:230px 100px;
     }
 }
 

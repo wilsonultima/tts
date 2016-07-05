@@ -17,7 +17,10 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 </head>
 
-
+<script>document.body.className += ' fade-out';
+window.onload=(function() {
+    $('body').removeClass('fade-out');
+});</script>
 
 <body class="has-cover">
 <div class="gallery-fix"></div>
@@ -34,24 +37,34 @@
 			<div class="cover-page-content">
 
                 <div class="pageapp-login">
-                    <a class="pageapp-login-logo"></a>
+                    <a href="#" class="pageapp-login-logo"></a>
                     <div class="spacer"></div>
                     <div class="cover-field">
                         <i class="fa fa-user"></i>
                         <input type="text" value="Nom d'utilisateur">
+                    </div>                    
+                    <div class="cover-field">
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="text" value="Adresse courriel">
+                    </div>                
+                    <div class="cover-field">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" value="passsword">
                     </div>                
                     <div class="cover-field full-bottom">
                         <i class="fa fa-lock"></i>
-                        <input type="password" value="Mot de passe">
+                        <input type="password" value="passsword">
                     </div>
-					<div class="page-login full-bottom">
-					<a href="retrieve.html" class="login-forgot"><i class="fa fa-eye"></i>Mot de passe oublié</a>
-					<a href="signup.html" class="login-create">Créer un compte<i class="fa fa-user"></i></a></div>
-                    <a href="#" class="pageapp-login-button button button-green"><i class="fa fa-arrow-right"></i>Se connecter</a>
-                   
-                    <a href="#" class="pageapp-login-button button facebook-color"><i class="fa fa-facebook"></i>Facebook</a>
-					
-                    <a href="#" class="pageapp-login-button button google-color"><i class="fa fa-google-plus"></i>Google</a>
+					<div class="container switch-box">
+						<h4 style="color:white; font-weight:400;" align="center">Accepter les <a href="#" style="color:white; font-weight:500;">termes et conditions<a></h4>
+						<a href="#" class="switch-icon switch-1">
+							<em><i class="fa fa-check"></i></em>
+							<span></span>
+							<em><i class="fa fa-times"></i></em>
+						</a>
+					</div>
+                    <a href="#" class="pageapp-login-button button button-green"><i class="fa fa-arrow-right"></i>Créer votre compte</a>
+					<a href="login.html" class="pageapp-login-button button button-red"><i class="fa fa-sign-in"></i>Se connecter</a>
                 </div>
 
             </div>
