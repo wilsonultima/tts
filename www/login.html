@@ -68,9 +68,12 @@
 	app.initialize();
 </script>	
 <script type="text/javascript">
-alert(JSON.stringify(screen.orientation));
-	screen.lockOrientation('portrait');
-	screen.unlockOrientation();
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady()
+    {
+        screen.lockOrientation('portrait');
+    }
 </script>
 </body>
 
