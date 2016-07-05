@@ -17,12 +17,18 @@
 <script type="text/javascript" src="scripts/custom.js"></script>
 </head>
 
-<script>document.body.className += ' fade-out';
-window.onload=(function() {
-    $('body').removeClass('fade-out');
-});</script>
 
+<script type="text/javascript">
+        $(window).load(function() {
+            $('#status').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow'); 
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+</script>
 <body class="has-cover">
+<div id="preloader">
+    <div id="status"></div>
+</div>
 <div class="gallery-fix"></div>
 <div class="share-bottom-tap-close"></div>
 <div class="menu-tap-close light-close"></div> 
