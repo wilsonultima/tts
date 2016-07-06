@@ -4,9 +4,28 @@
     font-family: ethnocentric;
     src: url(../fonts/ethnocentric.ttf);
 }
+.homepage-navigation a:hover .amidemande {
+	border: solid 2px #009B00!important;
+}
 
 
-
+.amidemande {
+    display: inline!important;
+    font-size: 14px!important;
+    line-height: 0px!important;
+    background-color: #3ae800!important;
+    color: white!important;
+    width: 30px!important;
+    height: 20px!important;
+    border: solid 2px #3ae800!important;
+    border-radius: 80px!important;
+    padding: 0 6px 0 3px;
+	margin-left: 5px
+	} 
+.homepage-navigation a:hover em {
+	text-shadow: 2px 2px 1px rgba(150, 150, 150, 0.4);
+	} 
+	
 .buttontest {
     -webkit-box-shadow: 
         0px 3px rgba(0,155,0,1),
@@ -19,7 +38,7 @@
     
 } 
 
-.buttontest:active {
+.buttontest:active, .buttontest:hover {
 	-webkit-box-shadow: 
         0px 3px rgba(0,155,0,1),
         0px 4px rgba(0,145,0,1),
@@ -45,11 +64,20 @@
 }
 
 .instantsport:hover {
-	
-	background-color:rgba(58,232,0,0.5)!important; 
+	color: white!important; 
+	background-color:#3ae800!important; 
+	border: solid 4px #009B00!important;
 }
 
+.instantsport:hover .leftinstant {
+	
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+}
 
+.instantsport:hover .rightinstant {
+	
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+}
 	
 html, body
 {
@@ -126,11 +154,11 @@ body{
 }
 
 .homepage-logo img{
-	width:230px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:40px;	
-	margin-bottom:40px;	
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 .homepage-navigation{
@@ -149,7 +177,7 @@ body{
 .homepage-navigation a i{
 	text-align:center;
 	display:block;
-	font-size:32.5px;
+	font-size:38px;
 	line-height:72.85px;	
 	color:#009B00;
 	width:75px;
@@ -164,7 +192,7 @@ body{
 
 }
 
-.homepage-navigation a i:hover{
+.homepage-navigation a:hover i{
 	background-color:#009B00;
 	border:solid 4px #3ae800;
 
@@ -181,8 +209,9 @@ body{
 	font-family:'Dosis', sans-serif;	
 	text-transform:uppercase;
 	font-style:normal;
+	font-weight:700!important;
 	color:#009B00;
-	font-size:14px;
+	font-size:13px;
 	display:block;
 	text-align:center;
 	margin-top:10px;
@@ -278,8 +307,8 @@ body{
 
 @media (max-height:570px){
 	.homepage-logo img {
-		width: 170px;
-		margin-top: 25x;
+		width: 240px;
+		margin-top: 15px;
 		margin-bottom: 25px;
 	}
 }

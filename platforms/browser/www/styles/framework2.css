@@ -299,9 +299,9 @@ a{
 }
 
 .decoration{ 
-	height:1px;
+	height:2px;
 	background-color:#3ae800;
-	margin-bottom:30px;
+	margin-bottom:20px;
 	display:block;
 	clear:both;
 }

@@ -4,19 +4,81 @@
     font-family: ethnocentric;
     src: url(../fonts/ethnocentric.ttf);
 }
+.homepage-navigation a:hover .amidemande {
+	border: solid 2px #009B00!important;
+}
+
+
+.amidemande {
+    display: inline!important;
+    font-size: 14px!important;
+    line-height: 0px!important;
+    background-color: #3ae800!important;
+    color: white!important;
+    width: 30px!important;
+    height: 20px!important;
+    border: solid 2px #3ae800!important;
+    border-radius: 80px!important;
+    padding: 0 6px 0 3px;
+	margin-left: 5px
+	} 
+.homepage-navigation a:hover em {
+	text-shadow: 2px 2px 1px rgba(150, 150, 150, 0.4);
+	} 
+	
+.buttontest {
+    -webkit-box-shadow: 
+        0px 3px rgba(0,155,0,1),
+        0px 4px rgba(0,145,0,1),
+        0px 5px rgba(0,135,0,1),
+        0px 6px rgba(0,125,0,1),
+        0px 7px rgba(0,115,0,1),
+        0px 8px rgba(0,105,0,1),
+        0px 14px 6px -1px rgba(0,155,0,1); 
+    
+} 
+
+.buttontest:active, .buttontest:hover {
+	-webkit-box-shadow: 
+        0px 3px rgba(0,155,0,1),
+        0px 4px rgba(0,145,0,1),
+        0px 5px rgba(0,135,0,1),
+        0px 6px rgba(0,125,0,1),
+        0px 7px rgba(0,115,0,1),
+        0px 8px rgba(0,105,0,1),
+		0px 10px 2px 0px rgba(0,155,0,.6);
+}
+
 .instantsport {
     font-family: ethnocentric;
-	width: 222px!important; 
+	line-height: 24px!important;
+	width: 212px!important; 
+	margin:0 5px 20px 5px;
 	font-size: 22px!important; 
 	font-weight:700!important; 
 	height: 70px!important; 
-	border: solid 1px #3ae800!important;
-	border-bottom: 5px solid #3ae800!important; 
-	color: white!important; 
-	background-color:#009B00!important; 
+	border: solid 4px #3ae800!important;
+	color: #009B00!important; 
+	background-color:white!important; 
 	border-radius: 30px!important;
 }
 
+.instantsport:hover {
+	color: white!important; 
+	background-color:#3ae800!important; 
+	border: solid 4px #009B00!important;
+}
+
+.instantsport:hover .leftinstant {
+	
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+}
+
+.instantsport:hover .rightinstant {
+	
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+}
+	
 html, body
 {
     min-height: 100%;
@@ -92,11 +154,11 @@ body{
 }
 
 .homepage-logo img{
-	width:230px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:40px;	
-	margin-bottom:40px;	
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 .homepage-navigation{
@@ -109,14 +171,14 @@ body{
 	float:left;	
 	margin-left:18px;
 	margin-right:18px;
-	margin-bottom:25px;
+	margin-bottom:22px;
 }
 
 .homepage-navigation a i{
 	text-align:center;
 	display:block;
-	font-size:32.5px;
-	line-height:72.85px!important;	
+	font-size:38px;
+	line-height:72.85px;	
 	color:#009B00;
 	width:75px;
 	height:75px;
@@ -130,8 +192,10 @@ body{
 
 }
 
-.homepage-navigation a i:hover{
-	background-color:rgba(0,0,0,0.9);
+.homepage-navigation a:hover i{
+	background-color:#009B00;
+	border:solid 4px #3ae800;
+
 	color:#FFFFFF;	
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -145,8 +209,9 @@ body{
 	font-family:'Dosis', sans-serif;	
 	text-transform:uppercase;
 	font-style:normal;
+	font-weight:700!important;
 	color:#009B00;
-	font-size:14px;
+	font-size:13px;
 	display:block;
 	text-align:center;
 	margin-top:10px;
@@ -242,8 +307,8 @@ body{
 
 @media (max-height:570px){
 	.homepage-logo img {
-		width: 170px;
-		margin-top: 25x;
+		width: 240px;
+		margin-top: 15px;
 		margin-bottom: 25px;
 	}
 }

@@ -51,35 +51,53 @@
     </div>
     
     <div class="homepage-navigation" >
-	
-    	<a class="animate fadeIn" 	 data-wow-delay="1.05s" href="homepage.html" style="margin-left: 0px; margin-right: 0px;">
-        	<i class="instantsport" style="line-height: 24px!important;"><div align="left" style="padding:8px 0 0 25px">INSTANT</div><div align="right" style="padding-right:25px"> SPORT</div></i>
+    	<a class="animate fadeIn" 	 data-wow-delay="1.05s" href="menu.html" style="margin-left: 0px; margin-right: 0px;">
+        	<i class="instantsport buttontest"><div class="leftinstant" align="left" style="padding:8px 0 0 25px">INSTANT</div><div align="right" class="rightinstant" style="padding-right:25px"> SPORT</div></i>
         </a>
 		<div class="decoration animate fadeIn" data-wow-duration="1s" data-wow-delay="1.10s"></div>
-		<a class="animate fadeIn" 	data-wow-duration="1s" data-wow-delay="1.15s" href="typography.html">
+		<a class="animate fadeIn" 	data-wow-duration="1s" data-wow-delay="1.15s" href="menu.html">
         	<i class="fa fa-user"></i>
             <em>Profil</em>
         </a>
-        <a class="animate fadeIn"	data-wow-duration="1s" data-wow-delay="1.25s" href="typography.html">
+        <a class="animate fadeIn"	data-wow-duration="1s" data-wow-delay="1.25s" href="menu.html">
         	<i class="fa fa-users"></i>
-            <em>Amis</em>
+            <em style="padding-left:20px">Amis <i class="amidemande">2</i></em>
         </a>    
-        <a class="animate fadeIn"	data-wow-duration="1s" data-wow-delay="1.35s" href="jquery.html">
+        <a class="animate fadeIn"	data-wow-duration="1s" data-wow-delay="1.35s" href="menu.html">
         	<i class="fa fa-dribbble"></i>
             <em>Parties</em>
         </a>
-        <a class="animate fadeIn" 	data-wow-duration="1s" data-wow-delay="1.45s"href="gallery.html">
+        <a class="animate fadeIn" 	data-wow-duration="1s" data-wow-delay="1.45s"href="menu.html">
         	<i class="fa fa-cog"></i>
             <em>Paramètres</em>
         </a>
 	<div class="decoration animate fadeIn" data-wow-duration="1s" data-wow-delay="1.50s"></div>
     </div>
-   
     
 </div>
 
-<div class="white-decoration"></div>
-<div class="body-background"></div>
+<div class="white-decoration" style="margin-bottom:0px;"></div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="cordova_plugins.js"></script>
+
+<script type="text/javascript">
+	app.initialize();
+</script>	
+<script type="text/javascript">
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady()
+    {
+        screen.lockOrientation('portrait');
+    }
+	document.addEventListener("deviceready", onDeviceReady2, false);
+		function onDeviceReady2() { 
+			document.addEventListener("backbutton", function (e) 
+			{
+				e.preventDefault(); 
+				}, false ); 
+			}
+</script>
 
 </body>
 </html>

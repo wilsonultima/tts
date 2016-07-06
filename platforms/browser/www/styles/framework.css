@@ -862,11 +862,7 @@ label{
 }
 
 @media(min-width:767px){
-    .one-half, .one-half-responsive{
-        width:45%;
-        float:left;
-        margin-right:10%;
-    }
+
     
     .one-third, .one-third-responsive{
         width:28%;
