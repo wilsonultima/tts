@@ -6,6 +6,15 @@
 }
 .instantsport {
     font-family: ethnocentric;
+	width: 222px!important; 
+	font-size: 22px!important; 
+	font-weight:700!important; 
+	height: 70px!important; 
+	border: solid 1px #3ae800!important;
+	border-bottom: 5px solid #3ae800!important; 
+	color: white!important; 
+	background-color:#009B00!important; 
+	border-radius: 30px!important;
 }
 
 html, body
@@ -111,7 +120,7 @@ body{
 	color:#009B00;
 	width:75px;
 	height:75px;
-	border:solid 1px #009B00;
+	border:solid 2px #3ae800;
 	border-radius:100px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -220,75 +229,6 @@ body{
 	color:rgba(0,0,0,0.4);
 }
 
-@media (min-width:360px){
-	.homepage-logo img{
-		margin-top:40px;	
-	}
-	
-	.homepage-navigation a{
-		margin-bottom:30px;
-	}
-	
-	.homepage-navigation a em{
-		margin-top:15px;	
-	}
-	
-	.footer{
-		margin-top:10px;
-	}
-}
-
-
-@media (orientation:landscape){
-	.homepage-logo img{
-		width:160px;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:30px;	
-		margin-bottom:30px;
-	}
-	
-	.homepage-navigation{
-		width:460px;
-		margin-left:auto;
-		margin-right:auto;	
-	}
-	
-	.homepage-navigation a i{
-		font-size:18px;
-		line-height:48px!important;	
-		width:50px;
-		height:50px;
-		border-radius:80px;
-		-webkit-transition: all 200ms ease;
-		-moz-transition: all 200ms ease;
-		-ms-transition: all 200ms ease;
-		-o-transition: all 200ms ease;
-		transition: all 200ms ease;
-	}
-	
-	.footer{
-		width:150px;
-		margin-top:0px;
-		margin-bottom:30px;
-	}
-	
-	.footer a{
-		font-size:12px;
-		width:30px;
-		height:30px;
-		margin-left:10px;
-		margin-right:10px;
-		border-radius:30px;
-		line-height:27px;
-		-webkit-transition: all 200ms ease;
-		-moz-transition: all 200ms ease;
-		-ms-transition: all 200ms ease;
-		-o-transition: all 200ms ease;
-		transition: all 200ms ease;
-	}
-	
-}
 
 /*Delete If Not Needed*/
 /*These 5 lines are for demo purpose only*/
@@ -300,149 +240,14 @@ body{
 	}
 }
 
-@media (min-width:767px) and (orientation:portrait){
-	
-	.homepage-logo img{
-		width:200px;	
-		margin-top:60px;	
-		margin-bottom:60px;
+@media (max-height:570px){
+	.homepage-logo img {
+		width: 170px;
+		margin-top: 25x;
+		margin-bottom: 25px;
 	}
-
-	.homepage-navigation{
-		width:570px;
-		margin-left:auto;
-		margin-right:auto;	
-	}
-	
-	.homepage-navigation a{
-		float:left;	
-		margin-left:30px;
-		margin-right:30px;
-		margin-bottom:60px;
-	}
-
-	.homepage-navigation a i{
-		text-align:center;
-		display:block;
-		font-size:42px;
-		line-height:128px!important;	
-		color:#1f1f1f;
-		width:130px;
-		height:130px;
-		border:solid 1px #3b4043;
-		border-radius:80px;
-		-webkit-transition: all 200ms ease;
-		-moz-transition: all 200ms ease;
-		-ms-transition: all 200ms ease;
-		-o-transition: all 200ms ease;
-		transition: all 200ms ease;
-	}
-	
-	.homepage-navigation a em{
-		font-size:16px;	
-		margin-top:20px;
-	}
-	
-	.footer{
-		margin-top:50px;
-		margin-bottom:40px;
-		width:200px;	
-	}
-	
-	.footer a{
-		width:45px;
-		height:45px;
-		display:block;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-		border-radius:30px;
-		font-size:14px;
-		line-height:43px;
-		-webkit-transition: all 200ms ease;
-		-moz-transition: all 200ms ease;
-		-ms-transition: all 200ms ease;
-		-o-transition: all 200ms ease;
-		transition: all 200ms ease;
-	}
-	
-	.footer em{
-		font-size:14px;	
-	}
-	
 }
 
-@media (min-width:1000px) and (orientation:landscape){
-	
-	.homepage-logo img{
-		width:200px;	
-		margin-top:100px;	
-		margin-bottom:100px;
-	}
-
-	.homepage-navigation{
-		width:860px;
-		margin-left:auto;
-		margin-right:auto;	
-	}
-	
-	.homepage-navigation a{
-		float:left;	
-		margin-left:20px;
-		margin-right:20px;
-		margin-bottom:60px;
-	}
-
-	.homepage-navigation a i{
-		text-align:center;
-		display:block;
-		font-size:42px;
-		line-height:98px!important;	
-		color:#1f1f1f;
-		width:100px;
-		height:100px;
-		border:solid 1px #3b4043;
-		border-radius:80px;
-		-webkit-transition: all 200ms ease;
-		-moz-transition: all 200ms ease;
-		-ms-transition: all 200ms ease;
-		-o-transition: all 200ms ease;
-		transition: all 200ms ease;
-	}
-	
-	.homepage-navigation a em{
-		font-size:16px;	
-		margin-top:20px;
-	}
-	
-	.footer{
-		margin-top:50px;
-		margin-bottom:50px;
-		width:200px;	
-	}
-	
-	.footer a{
-		width:45px;
-		height:45px;
-		display:block;
-		float:left;
-		margin-left:10px;
-		margin-right:10px;
-		border-radius:30px;
-		font-size:14px;
-		line-height:43px;
-		-webkit-transition: all 200ms ease;
-		-moz-transition: all 200ms ease;
-		-ms-transition: all 200ms ease;
-		-o-transition: all 200ms ease;
-		transition: all 200ms ease;
-	}
-	
-	.footer em{
-		font-size:14px;	
-	}
-	
-}
 
 /*/////////////////////*/
 /*The Rest of the pages*/
@@ -1092,30 +897,6 @@ $(this.el).html(
 	}
 }
 
-@media (min-width:768px) and (orientation:landscape){
-	.error-wrapper{
-		padding-top:10%;
-		position:relative;
-		padding-bottom:20%;
-	}	
-	
-	.error-wrapper h1{
-		font-size:40px;	
-	}
-	
-	.error-wrapper h4{
-		font-size:16px;	
-		font-weight:600;
-		padding-top:10px;
-	}
-	
-	.error-wrapper p{
-		font-size:14px;
-		width:420px;	
-		line-height:30px;
-		padding-top:20px;
-	}
-}
 
 /*//////////*/
 /*Staff Page*/
@@ -1144,12 +925,6 @@ $(this.el).html(
 	overflow:visible;
 }
 
-@media (min-width:768px){
-	.login-box{
-		margin-top:100px;	
-		margin-bottom:100px!important;
-	}
-}
 
 .login-box img{
 	position:absolute;
