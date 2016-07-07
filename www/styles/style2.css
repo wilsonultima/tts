@@ -19,7 +19,7 @@
 	margin:-20px 0 0 -15px;
 	position: absolute;
 	display:block;
-	height:400px;
+	height:425px;
 	width:0px;
     border-right: 15px solid rgba(0,155,0,0.5); 
 	border-top: 20px solid white;
@@ -28,7 +28,7 @@
 .sidebarcusrightcorner2 {
 	z-index:02;
 	left:100%;
-	margin:360px 0 0 -9px;
+	margin:385px 0 0 -8px;
 	position: absolute;
 	display:block;
 	height:0px;
@@ -40,7 +40,7 @@
 	
 	z-index:02;
 	left:100%;
-	margin:-20px 0 0 -9px;
+	margin:-20px 0 0 -8px;
 	position: absolute;
 	display:block;
 	height:0px;
@@ -52,10 +52,10 @@
 
 	z-index:04;
 	left:100%;
-	margin: 0px 0 0px -9px;
+	margin: 0px 0 0px -8px;
 	position: absolute;
 	display:block;
-	height:360px;
+	height:385px;
 	width:0px;
     border-right: 10px solid rgba(0,155,0,1); 
 
@@ -66,7 +66,7 @@
 	margin:-20px 0 0 0px;
 	position: absolute;
 	display:block;
-	height:400px;
+	height:425px;
 	width:0px;
     border-left: 15px solid rgba(0,155,0,0.5); 
 	border-top: 20px solid white;
@@ -75,7 +75,7 @@
 .sidebarcusleftcorner2 {
 	z-index:02;
 	
-	margin:360px 0 0 -6px;
+	margin:385px 0 0 -7px;
 	position: absolute;
 	display:block;
 	height:0px;
@@ -87,7 +87,7 @@
 	
 	z-index:02;
 	
-	margin:-20px 0 0 -6px;
+	margin:-20px 0 0 -7px;
 	position: absolute;
 	display:block;
 	height:0px;
@@ -98,10 +98,10 @@
 .sidebarcusleft1 {
 
 	z-index:04;
-	margin: 0px 0px 0px -1px;
+	margin: 0px 0px 0px -2px;
 	position: absolute;
 	display:block;
-	height:360px;
+	height:385px;
 	width:0px;
     border-left: 10px solid rgba(0,155,0,1); 
 
