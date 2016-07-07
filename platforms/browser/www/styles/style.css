@@ -7,6 +7,19 @@
     src: url(../fonts/ethnocentric.ttf);
 }
 
+div.user-item:hover .usercustom3{
+	display:block!important;
+    transition: all 500ms ease;
+}	
+div.user-item:hover .usercustom2{
+	right:40px!important;
+    transition: all 500ms ease;
+}	
+div.user-item:hover .usercustom1{
+	right:80px!important;
+    transition: all 500ms ease;
+}	
+
 .has-cover #mynano{
     top:0px!important;
 }
