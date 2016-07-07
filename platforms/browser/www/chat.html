@@ -25,6 +25,11 @@
             $('body').delay(350).css({'overflow':'visible'});
         })
 </script>
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
 <body>
 <div id="preloader">
     <div id="status"></div>
@@ -108,7 +113,7 @@
         </div>    
 
         <div class="chat-input" >
-            <input type="text" style=" border-radius:40px!important;" value="Écrivez votre message ici...">
+            <input class="keyboardpad" type="text" style=" border-radius:40px!important;" value="Écrivez votre message ici...">
             <a class="scale-hover" href="#" style="background-color:#009B00">Envoyer</a>
         </div>  
         <div class="chat-input-clear"></div>

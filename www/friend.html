@@ -21,7 +21,17 @@ function goBack() {
     window.history.back()
 }
 </script>
+<script type="text/javascript">
+        $(window).load(function() {
+            $('#status').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow'); 
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+</script>
 <body>
+<div id="preloader">
+    <div id="status"></div>
+</div>
 <div class="gallery-fix"></div>
 <div class="share-bottom-tap-close"></div>
 <div class="menu-tap-close light-close"></div> 
@@ -52,33 +62,41 @@ function goBack() {
 							<a href="profile.html"><img class="user-item-image preload-image" data-original="images/uwc.png" alt="img">
 							<h5>Ultima Creation</h5>
 							<em>Québec, QC</em></a>
-							<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px"><i class="fa fa-comment"></i></a>
-							<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px"><i class="fa fa-bolt"></i></a>
-							<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none;"><i class="fa fa-times"></i></a>
+							<div class="buttonamis" style="position: relative; top:-80px;">
+								<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px; z-index:3"><i class="fa fa-comment"></i></a>
+								<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px; z-index:3"><i class="fa fa-bolt"></i></a>
+								<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none; z-index:2;"><i class="fa fa-times"></i></a>
+							</div>
 						</div>             
 						<div class="user-item">
 							<a href="profile.html"><img class="user-item-image preload-image" data-original="images/icon.png" alt="img">
 							<h5>Time To Sports</h5>
 							<em>Québec, QC</em></a>
-							<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px"><i class="fa fa-comment"></i></a>
-							<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px"><i class="fa fa-bolt"></i></a>
-							<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none;"><i class="fa fa-times"></i></a>
+							<div class="buttonamis" style="position: relative; top:-80px;">
+								<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px; z-index:3"><i class="fa fa-comment"></i></a>
+								<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px; z-index:3"><i class="fa fa-bolt"></i></a>
+								<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none; z-index:2;"><i class="fa fa-times"></i></a>
+							</div>
 						</div>
 						<div class="user-item">
 							<a href="profile.html"><img class="user-item-image preload-image" data-original="images/uwc.png" alt="img">
 							<h5>Ultima Creation</h5>
 							<em>Québec, QC</em></a>
-							<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px"><i class="fa fa-comment"></i></a>
-							<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px"><i class="fa fa-bolt"></i></a>
-							<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none;"><i class="fa fa-times"></i></a>
+							<div class="buttonamis" style="position: relative; top:-80px;">
+								<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px; z-index:3"><i class="fa fa-comment"></i></a>
+								<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px; z-index:3"><i class="fa fa-bolt"></i></a>
+								<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none; z-index:2;"><i class="fa fa-times"></i></a>
+							</div>
 						</div>             
 						<div class="user-item">
 							<a href="profile.html"><img class="user-item-image preload-image" data-original="images/icon.png" alt="img">
 							<h5>Time To Sports</h5>
 							<em>Québec, QC</em></a>
-							<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px"><i class="fa fa-comment"></i></a>
-							<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px"><i class="fa fa-bolt"></i></a>
-							<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none;"><i class="fa fa-times"></i></a>
+							<div class="buttonamis" style="position: relative; top:-80px;">
+								<a href="chat.html" class="usercustom2 user-item-icon-1 bg-blue-light scale-hover" style="right:0px; z-index:3"><i class="fa fa-comment"></i></a>
+								<a href="" class="usercustom1 user-item-icon-2 bg-green-light scale-hover" style="right:40px; z-index:3"><i class="fa fa-bolt"></i></a>
+								<a href="#" class="usercustom3 user-item-icon-2 bg-red-dark scale-hover" style="display:none; z-index:2;"><i class="fa fa-times"></i></a>
+							</div>
 						</div>
 
 					</div>
