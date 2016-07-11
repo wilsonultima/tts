@@ -12,29 +12,10 @@
 }
 div.user-item:hover .usercustom3{
 	display:block!important;
-    transition: all 1000ms ease;
-}	
-div.user-item:hover .usercustom2{
-	right:40px!important;
-    transition: all 1000ms ease;
-}	
-div.user-item:hover .usercustom1{
+	
+    transition: all 1500ms ease-out!important;
 	right:80px!important;
-    transition: all 1000ms ease;
-}	
-
-div.user-item .buttonamis:hover .usercustom1{
-	right:40px!important;
-	transition: all 1000ms ease;
-}	
-div.user-item .buttonamis:hover .usercustom2{
-	right:0px!important;
-	transition: all 1000ms ease;
-}	
-div.user-item .buttonamis:hover .usercustom3{
-	display:none!important;
-	transition: all 1000ms ease;
-}	
+}		
 
 .has-cover #mynano{
     top:0px!important;
