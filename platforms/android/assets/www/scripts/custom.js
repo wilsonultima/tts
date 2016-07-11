@@ -324,13 +324,20 @@ $(document).ready(function () {
     
     //Accordion
     $('.accordion').find('.accordion-toggle').click(function(){
-        //Expand or collapse this panel
-        $(this).next().slideDown(250);
-        $('.accordion').find('i').removeClass('rotate-180');
-        $(this).find('i').addClass('rotate-180');
-
-        //Hide the other panels
-        $(".accordion-content").not($(this).next()).slideUp(250);
+		var hasC=false;
+		$(this).find('i').each(function(){
+			hasC = $(this).hasClass('rotate-180');
+		});
+		if(hasC){
+			$(this).next().slideUp(250);
+			$(this).find('i').removeClass('rotate-180');
+		}
+		else{
+			$(this).next().slideDown(250);
+			$('.accordion').find('i').removeClass('rotate-180');
+			$(this).find('i').addClass('rotate-180');
+		}
+		$(".accordion-content").not($(this).next()).slideUp(250);
     });    
     
     //Tabs
