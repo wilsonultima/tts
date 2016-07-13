@@ -40,18 +40,99 @@ function goBack() {
 <div id="page-content">
     <div id="page-content-scroll">
         <div class="header-clear" style="height: 160px;"></div>  
-        <div class="content"> 
-			<h6 class="accordion-toggle">
-				Accordion Text
-				<i class="fa fa-angle-down"></i><!--add rotate-180 to this to turn the arrow-->
-			</h6>
-			<!-- Add the extra class active-accordion to any accordion-content to make it active by default -->
-			<div class="accordion-content">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ex auctor magna convallis malesuada. Etiam congue neque vitae elit condimentum consectetur. Suspendisse potenti. Maecenas blandit turpis nec tortor porta, nec imperdiet ex varius. Quisque semper molestie urna, vitae consequat dui feugiat nec. Donec dapibus eros felis, quis hendrerit ante pharetra vitae. Etiam nec purus sit amet purus volutpat scelerisque. Donec et imperdiet odio. Maecenas rutrum iaculis mi, sed luctus purus dignissim lobortis.
-				</p>
+        <div class="content">
+
+            <div class="one-half-responsive">
+                <div class="container heading-style">
+                    <h4 class="heading-title">Contactez-nous</h4>
+                    <i class="fa fa-envelope-o heading-icon"></i>
+                    <div class="line bg-black" style="background-color:#3ae800; height: 2px;"></div>
+                </div>
+                <div class="container no-bottom">
+                    <div class="contact-form no-bottom"> 
+                        <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                            <div class="container">
+                                <div class="decoration"></div>
+                                <h4 class="center-text">Message Sent </h4>
+                                <p class="center-text">Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thanks!</p>
+                            </div>
+                        </div>
+
+                        <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                            <fieldset>
+                                <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
+                                    <p class="center-text uppercase small-text">Name is required!</p>
+                                </div>             
+                                <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError">
+                                    <p class="center-text uppercase small-text">Mail address required!</p>
+                                </div> 
+                                <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError2">
+                                    <p class="center-text uppercase small-text">Mail address must be valid!</p>
+                                </div> 
+                                <div class="formValidationError bg-red-dark color-white" id="contactMessageTextareaError">
+                                    <p class="center-text uppercase small-text">Message field is empty!</p>
+                                </div>   
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Votre nom: </label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactEmailField" for="contactEmailField">Adresse courriel: </label>
+                                    <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                                </div>
+                                <div class="formTextareaWrap">
+                                    <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: </label>
+                                    <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                                </div>
+                                <div class="formSubmitButtonErrorsWrap contactFormButton">
+                                    <input type="submit" style="width:40%; margin-left:auto; margin-right:auto;" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="Envoyer" data-formId="contactForm"/>
+                                </div>
+                            </fieldset>
+                        </form>       
+                    </div>
+                </div>
+            </div>
+            <div class="one-half-responsive last-column" style="margin-top: 30px;">
+                <div class="container no-bottom" align="center">
+                    <h4><strong>Coordonnées:</strong></h4>
+                    <p style="margin-bottom:50px;">
+                        121 King Street, Melbourne <br>
+                        Victoria 3000 Australia
+                        <a href="tel: +123 456 7890" class="contact-call"><i class="fa fa-phone"></i>+ 123 456 7890</a>
+                        <a href="sms: +123 456 7890" class="contact-text"><i class="fa fa-comments"></i>+ 123 456 7890</a>
+                        <a href="tel: +123 456 7890" class="contact-text"><i class="fa fa-fax"></i>+ 123 456 7890</a>
+                        <a href="mailto:name@domain.com" class="contact-mail"><i class="fa fa-envelope"></i>mail@doamin.com</a>
+                        <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>enabled.labs</a>
+                    </p>
+                </div>            
+            </div>
+			<div class="container" style="margin-bottom: 30px;">
+				<div class="accordion">
+					<h6 class="accordion-toggle" style="border-bottom: solid 2px #3ae800; height: 0px; transition: all 500ms ease!important;" >
+							<span style="background-color: #FFFFFF;font-size: 20px;height: 40px;text-align: center;line-height: 40px;position: absolute;top: -20px;left: 50%;z-index: 2;font-family: 'Roboto', sans-serif; color: #1f1f1f; font-weight: 500; width: 220px; margin-left: -120px;">Conditions d'utilisation</span>
+						<i class="fa fa-angle-down" style="margin-top:-30px; font-size:20px;background-color: #FFFFFF; width: 40px; transition: all 500ms ease!important;"></i>
+					</h6>
+					<div class="accordion-content" style="padding-top:20px; padding-bottom: 0px; transition: all 500ms ease-out!important;">
+						<p style="border-bottom: solid 0px rgba(0,0,0,0.1);" align="justify">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ex auctor magna convallis malesuada. Etiam congue neque vitae elit condimentum consectetur. Suspendisse potenti. Maecenas blandit turpis nec tortor porta, nec imperdiet ex varius. Quisque semper molestie urna, vitae consequat dui feugiat nec. Donec dapibus eros felis, quis hendrerit ante pharetra vitae. Etiam nec purus sit amet purus volutpat scelerisque. Donec et imperdiet odio. Maecenas rutrum iaculis mi, sed luctus purus dignissim lobortis.
+						</p>
+					</div>
+				</div>
 			</div>
-		</div>  		
+			<div class="container" style="margin-bottom: 30px;">
+				<div class="accordion">
+					<h6 class="accordion-toggle" style="border-bottom: solid 2px #3ae800; height: 0px; transition: all 500ms ease!important;" >
+							<span style="background-color: #FFFFFF;font-size: 20px;height: 40px;text-align: center;line-height: 40px;position: absolute;top: -20px;left: 50%;z-index: 2;font-family: 'Roboto', sans-serif; color: #1f1f1f; font-weight: 500; width: 150px; margin-left: -85px;">Confidentialité</span>
+						<i class="fa fa-angle-down" style="margin-top:-30px; font-size:20px;background-color: #FFFFFF; width: 40px; transition: all 500ms ease!important;"></i>
+					</h6>
+					<div class="accordion-content" style="padding-top:20px; padding-bottom: 0px; transition: all 500ms ease-out!important;">
+						<p style="border-bottom: solid 0px rgba(0,0,0,0.1);" align="justify">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ex auctor magna convallis malesuada. Etiam congue neque vitae elit condimentum consectetur. Suspendisse potenti. Maecenas blandit turpis nec tortor porta, nec imperdiet ex varius. Quisque semper molestie urna, vitae consequat dui feugiat nec. Donec dapibus eros felis, quis hendrerit ante pharetra vitae. Etiam nec purus sit amet purus volutpat scelerisque. Donec et imperdiet odio. Maecenas rutrum iaculis mi, sed luctus purus dignissim lobortis.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 </div>
 <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>HAUT</a>
