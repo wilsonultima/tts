@@ -211,6 +211,8 @@ textarea{
 
 /*---Background and text colors and hovers---*/
 
+
+.hoverbuttongreen:hover{ background-color: #3ae800!important; border: 2px solid #009B00;}
 .bg-teal-light{ background-color: #1abc9c!important; color:#FFFFFF;}
 .bg-teal-dark{  background-color: #16a085!important; color:#FFFFFF;}
 .border-teal-light{ border:solid 1px #1abc9c;}
@@ -876,17 +878,6 @@ label{
         margin-right:5%;
     }
     
-	.sidebar-left-big{
-		width:70%;
-		float:left;
-		margin-right:5%	
-	}
-	
-	.sidebar-right-small{
-		width:25%;
-		float:right;	
-	}
-		
 	.sidebar-right-big{
 		width:70%;
 		float:right;	

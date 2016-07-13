@@ -30,7 +30,7 @@ function goBack() {
 	<div class="content-strip" style="padding-bottom: 0px;">
 		<div class="strip-content">
 			<a onclick="goBack()" href="" style="position: absolute;right: 0px; height: 60px; line-height: 60px; top: 0px; width: 70px;text-align: center; font-size:25px; margin-right:30px;"><i class="fa fa-arrow-left" style="color:#009B00; right:0;"></i></a>
-			<h4 style="color:#009B00; font-family: ethnocentric; margin-bottom: 30px;">Paramètres</h4>
+			<h4 class="petitpara" style="color:#009B00; font-family: ethnocentric; margin-bottom: 30px;">Paramètres</h4>
 			<i class="fa fa-cog" style="color:#009B00;width: 40px;"></i>
 		</div>
 		<div class="decoration" style="background-color: #009B00; height: 2px; z-index:200; margin-bottom: 0px;"></div>
@@ -40,198 +40,115 @@ function goBack() {
 <div id="page-content">
     <div id="page-content-scroll">
         <div class="header-clear" style="height: 160px;"></div>  
-        <div class="content"> 
+        <div class="content">
 
-		</div>  		
+            <div class="one-half-responsive">
+                <div class="container heading-style">
+                    <h4 class="heading-title">Contactez-nous</h4>
+                    <i class="fa fa-envelope-o heading-icon"></i>
+                    <div class="line bg-black" style="background-color:#3ae800; height: 2px;"></div>
+                </div>
+                <div class="container no-bottom">
+                    <div class="contact-form no-bottom"> 
+                        <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                            <div class="container">
+                                <div class="decoration"></div>
+                                <h4 class="center-text">Message Sent </h4>
+                                <p class="center-text">Your message has been successfuly sent. Please allow up to 48 hours for a reply! Thanks!</p>
+                            </div>
+                        </div>
+
+                        <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                            <fieldset>
+                                <div class="formValidationError bg-red-dark color-white" id="contactNameFieldError">
+                                    <p class="center-text uppercase small-text">Name is required!</p>
+                                </div>             
+                                <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError">
+                                    <p class="center-text uppercase small-text">Mail address required!</p>
+                                </div> 
+                                <div class="formValidationError bg-red-dark color-white" id="contactEmailFieldError2">
+                                    <p class="center-text uppercase small-text">Mail address must be valid!</p>
+                                </div> 
+                                <div class="formValidationError bg-red-dark color-white" id="contactMessageTextareaError">
+                                    <p class="center-text uppercase small-text">Message field is empty!</p>
+                                </div>   
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField" for="contactNameField">Votre nom: </label>
+                                    <input type="text" name="contactNameField" value="" class="contactField requiredField" id="contactNameField"/>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactEmailField" for="contactEmailField">Adresse courriel: </label>
+                                    <input type="text" name="contactEmailField" value="" class="contactField requiredField requiredEmailField" id="contactEmailField"/>
+                                </div>
+                                <div class="formTextareaWrap">
+                                    <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Message: </label>
+                                    <textarea name="contactMessageTextarea" class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+                                </div>
+                                <div class="formSubmitButtonErrorsWrap contactFormButton">
+                                    <input type="submit" style="width:40%; margin-left:auto; margin-right:auto;" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="Envoyer" data-formId="contactForm"/>
+                                </div>
+                            </fieldset>
+                        </form>       
+                    </div>
+                </div>
+            </div>
+            <div class="one-half-responsive last-column" style="margin-top: 30px;">
+                <div class="container no-bottom" align="center">
+                    <h4><strong>Coordonnées:</strong></h4>
+                    <p style="margin-bottom:50px;">
+                        121 King Street, Melbourne <br>
+                        Victoria 3000 Australia
+                        <a href="tel: +123 456 7890" class="contact-call"><i class="fa fa-phone"></i>+ 123 456 7890</a>
+                        <a href="sms: +123 456 7890" class="contact-text"><i class="fa fa-comments"></i>+ 123 456 7890</a>
+                        <a href="tel: +123 456 7890" class="contact-text"><i class="fa fa-fax"></i>+ 123 456 7890</a>
+                        <a href="mailto:name@domain.com" class="contact-mail"><i class="fa fa-envelope"></i>mail@doamin.com</a>
+                        <a href="#" class="contact-facebook"><i class="fa fa-facebook"></i>enabled.labs</a>
+                    </p>
+                </div>            
+            </div>
+			<div class="container" style="margin-bottom: 30px;">
+				<div class="accordion">
+					<h6 class="accordion-toggle" style="border-bottom: solid 2px #3ae800; height: 0px; transition: all 500ms ease!important;" >
+							<span style="background-color: #FFFFFF;font-size: 20px;height: 40px;text-align: center;line-height: 40px;position: absolute;top: -20px;left: 50%;z-index: 2;font-family: 'Roboto', sans-serif; color: #1f1f1f; font-weight: 500; width: 220px; margin-left: -120px;">Conditions d'utilisation</span>
+						<i class="fa fa-angle-down" style="margin-top:-30px; font-size:20px;background-color: #FFFFFF; width: 40px; transition: all 500ms ease!important;"></i>
+					</h6>
+					<div class="accordion-content" style="padding-top:20px; padding-bottom: 0px; transition: all 500ms ease-out!important;">
+						<p style="border-bottom: solid 0px rgba(0,0,0,0.1);" align="justify">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ex auctor magna convallis malesuada. Etiam congue neque vitae elit condimentum consectetur. Suspendisse potenti. Maecenas blandit turpis nec tortor porta, nec imperdiet ex varius. Quisque semper molestie urna, vitae consequat dui feugiat nec. Donec dapibus eros felis, quis hendrerit ante pharetra vitae. Etiam nec purus sit amet purus volutpat scelerisque. Donec et imperdiet odio. Maecenas rutrum iaculis mi, sed luctus purus dignissim lobortis.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container" style="margin-bottom: 30px;">
+				<div class="accordion">
+					<h6 class="accordion-toggle" style="border-bottom: solid 2px #3ae800; height: 0px; transition: all 500ms ease!important;" >
+							<span style="background-color: #FFFFFF;font-size: 20px;height: 40px;text-align: center;line-height: 40px;position: absolute;top: -20px;left: 50%;z-index: 2;font-family: 'Roboto', sans-serif; color: #1f1f1f; font-weight: 500; width: 150px; margin-left: -85px;">Confidentialité</span>
+						<i class="fa fa-angle-down" style="margin-top:-30px; font-size:20px;background-color: #FFFFFF; width: 40px; transition: all 500ms ease!important;"></i>
+					</h6>
+					<div class="accordion-content" style="padding-top:20px; padding-bottom: 0px; transition: all 500ms ease-out!important;">
+						<p style="border-bottom: solid 0px rgba(0,0,0,0.1);" align="justify">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ex auctor magna convallis malesuada. Etiam congue neque vitae elit condimentum consectetur. Suspendisse potenti. Maecenas blandit turpis nec tortor porta, nec imperdiet ex varius. Quisque semper molestie urna, vitae consequat dui feugiat nec. Donec dapibus eros felis, quis hendrerit ante pharetra vitae. Etiam nec purus sit amet purus volutpat scelerisque. Donec et imperdiet odio. Maecenas rutrum iaculis mi, sed luctus purus dignissim lobortis.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 </div>
-<a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
-    
-<div class="left-menu dark-menu">
-    <div class="menu-scroll">
-        <a class="menu-item" href="index.html"> <i class="fa fa-home"></i><em>Home</em> </a>
-        <a class="menu-item" href="index-coverpage.html"> <i class="fa fa-image"></i><em>Cover</em> </a>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-navicon"></i><em>Menus</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll">
-                    <a class="submenu-item" href="menu-rainbow.html"> <i class="fa fa-newspaper-o"></i><em>Rainbow</em></a>
-                    <a class="submenu-item" href="menu-dark.html"> <i class="fa fa-image"></i><em>Dark</em></a>
-                    <a class="submenu-item" href="menu-light.html"> <i class="fa fa-list"></i><em>Light</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-cog"></i><em>Features</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll">
-                    <a class="submenu-item" href="features-type.html"> <i class="fa fa-font"></i><em>Type</em></a>
-                    <a class="submenu-item" href="features-tabs.html"> <i class="fa fa-th-large"></i><em>Tabs</em></a>
-                    <a class="submenu-item" href="features-toggles.html"> <i class="fa fa-plus"></i><em>Toggles</em></a>
-                    <a class="submenu-item" href="features-accordion.html"> <i class="fa fa-chevron-down"></i><em>Accordion</em></a>
-                    <a class="submenu-item" href="features-notify.html"> <i class="fa fa-bell-o"></i><em>Notify</em></a>
-                    <a class="submenu-item" href="features-charts.html"> <i class="fa fa-bar-chart"></i><em>Charts</em></a>
-                    <a class="submenu-item" href="features-buttons.html"> <i class="fa fa-hand-pointer-o"></i><em>Buttons</em></a>
-                    <a class="submenu-item" href="features-device.html"> <i class="fa fa-mobile"></i><em>Detection</em></a>
-                    <a class="submenu-item" href="features-others.html"> <i class="fa fa-refresh"></i><em>Others</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-camera"></i><em>Gallery</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll">
-                    <a class="submenu-item" href="gallery-round.html"> <i class="fa fa-circle-o"></i><em>Rounded</em></a>
-                    <a class="submenu-item" href="gallery-square.html"> <i class="fa fa-square-o"></i><em>Squared</em></a>
-                    <a class="submenu-item" href="gallery-adaptive.html"> <i class="fa fa-th-list"></i><em>Adaptive</em></a>
-                    <a class="submenu-item" href="gallery-filter.html"> <i class="fa fa-th"></i><em>Filterable</em></a>
-                    <a class="submenu-item" href="gallery-wide.html"> <i class="fa fa-arrows-alt"></i><em>Wide</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-image"></i><em>Portfolio</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll">
-                    <a class="submenu-item" href="portfolio-one.html"> <i class="fa fa-hand-pointer-o"></i><em>One Item</em></a>
-                    <a class="submenu-item" href="portfolio-two.html"> <i class="fa fa-hand-peace-o"></i><em>Two Item</em></a>
-                    <a class="submenu-item" href="portfolio-adaptive.html"> <i class="fa fa-th-list"></i><em>Adaptive</em></a>
-                    <a class="submenu-item" href="portfolio-filter.html"> <i class="fa fa-th"></i><em>Filterable</em></a>
-                    <a class="submenu-item" href="portfolio-wide.html"> <i class="fa fa-arrows-alt"></i><em>Wide</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-files-o"></i><em>Pages</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll active-submenu">
-                    <a class="submenu-item" href="page-error.html"> <i class="fa fa-exclamation"></i><em>Error</em></a>
-                    <a class="submenu-item" href="page-soon.html"> <i class="fa fa-clock-o"></i><em>Soon</em></a>
-                    <a class="submenu-item" href="page-activity.html"> <i class="fa fa-list"></i><em>Activity</em></a>
-                    <a class="submenu-item" href="page-profile-1.html"> <i class="fa fa-user"></i><em>Profile 1</em></a>
-                    <a class="submenu-item" href="page-profile-2.html"> <i class="fa fa-user"></i><em>Profile 2</em></a>
-                    <a class="submenu-item" href="page-login.html"> <i class="fa fa-lock"></i><em>Login</em></a>
-                    <a class="submenu-item" href="page-signup.html"> <i class="fa fa-code"></i><em>Signup</em></a>
-                    <a class="submenu-item selected-item" href="page-userlist.html"> <i class="fa fa-user"></i><em>Userlist</em></a>
-                    <a class="submenu-item" href="page-reviews.html"> <i class="fa fa-star"></i><em>Reviews</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-mobile"></i><em>AppStyled</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll">
-                    <a class="submenu-item" href="pageapp-chat.html"> <i class="fa fa-comment-o"></i><em>Chat</em></a>
-                    <a class="submenu-item" href="pageapp-login.html"> <i class="fa fa-lock"></i><em>Login</em></a>
-                    <a class="submenu-item" href="pageapp-signup.html"> <i class="fa fa-code"></i><em>Signup</em></a>
-                    <a class="submenu-item" href="pageapp-calendar.html"> <i class="fa fa-calendar"></i><em>Calendar</em></a>
-                    <a class="submenu-item" href="pageapp-tasklist.html"> <i class="fa fa-check"></i><em>Tasklist</em></a>
-                    <a class="submenu-item" href="pageapp-checklist.html"> <i class="fa fa-check"></i><em>Checklist</em></a>
-                    <a class="submenu-item" href="pageapp-reminders.html"> <i class="fa fa-bell-o"></i><em>Reminders</em></a>
-                    <a class="submenu-item" href="pageapp-coverpage.html"> <i class="fa fa-image"></i><em>Coverpage</em></a>
-                    <a class="submenu-item" href="pageapp-timeline-1.html"> <i class="fa fa-align-left"></i><em>Timeline 1</em></a>
-                    <a class="submenu-item" href="pageapp-timeline-2.html"> <i class="fa fa-align-center"></i><em>Timeline 2</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-shopping-cart"></i><em>Store</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll">
-                    <a class="submenu-item" href="store-front-1.html"> <i class="fa fa-shopping-bag"></i><em>Front 1</em></a>
-                    <a class="submenu-item" href="store-front-2.html"> <i class="fa fa-shopping-basket"></i><em>Front 2</em></a>
-                    <a class="submenu-item" href="store-cover.html"> <i class="fa fa-image"></i><em>Cover</em></a>
-                    <a class="submenu-item" href="store-card.html"> <i class="fa fa-sticky-note-o"></i><em>Card</em></a>
-                    <a class="submenu-item" href="store-product.html"> <i class="fa fa-gift"></i><em>Product</em></a>
-                    <a class="submenu-item" href="store-cart-1.html"> <i class="fa fa-shopping-cart"></i><em>Cart 1</em></a>
-                    <a class="submenu-item" href="store-cart-2.html"> <i class="fa fa-shopping-cart"></i><em>Cart 2</em></a>
-                    <a class="submenu-item" href="store-checkout.html"> <i class="fa fa-credit-card"></i><em>Checkout</em></a>
-                    <a class="submenu-item" href="store-history.html"> <i class="fa fa-history"></i><em>History</em></a>
-                    <a class="submenu-item" href="store-faq.html"> <i class="fa fa-question"></i><em>FAQ</em></a>
-                    <a class="submenu-item" href="store-about.html"> <i class="fa fa-info"></i><em>About</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <div class="has-submenu">
-            <a class="menu-item open-submenu" href="#"> <i class="fa fa-newspaper-o"></i><em>News</em> </a>
-            <div class="submenu">
-                <div class="submenu-scroll">
-                    <a class="submenu-item" href="news-front.html"> <i class="fa fa-newspaper-o"></i><em>Front</em></a>
-                    <a class="submenu-item" href="news-cover.html"> <i class="fa fa-image"></i><em>Cover</em></a>
-                    <a class="submenu-item" href="news-list-1.html"> <i class="fa fa-list"></i><em>List 1</em></a>
-                    <a class="submenu-item" href="news-list-2.html"> <i class="fa fa-list"></i><em>List 2</em></a>
-                    <a class="submenu-item" href="news-list-3.html"> <i class="fa fa-list"></i><em>List 3</em></a>
-                    <a class="submenu-item" href="news-post-1.html"> <i class="fa fa-pencil"></i><em>Post 1</em></a>
-                    <a class="submenu-item" href="news-post-2.html"> <i class="fa fa-pencil"></i><em>Post 2</em></a>
-                    <a class="submenu-item" href="news-post-3.html"> <i class="fa fa-pencil"></i><em>Post 3</em></a>
-                    <a class="submenu-item" href="news-activity.html"> <i class="fa fa-archive"></i><em>Archive</em></a>
-                    <a class="submenu-item" href="news-faq.html"> <i class="fa fa-info"></i><em>FAQ</em></a>
-                    <a class="submenu-item" href="news-about.html"> <i class="fa fa-info"></i><em>About</em></a>
-                    <a class="submenu-item close-submenu" href="#"> <i class="fa fa-close"></i><em>Close</em> </a>
-                </div>
-            </div>
-        </div>
-        <a class="menu-item" href="blog-list.html"> <i class="fa fa-pencil"></i><em>Blog</em>  </a>
-        <a class="menu-item" href="page-videos.html"> <i class="fa fa-youtube-play"></i><em>Videos</em> </a>
-        <a class="menu-item" href="page-map.html"> <i class="fa fa-map-marker"></i><em>Map</em> </a>
-        <a class="menu-item" href="contact.html"> <i class="fa fa-envelope-o"></i><em>Contact</em> </a>
-        <a class="menu-item" href="tel:+1 234 567 890"> <i class="fa fa-phone"></i><em>Call Us</em> </a>
-        <a class="menu-item" href="sms:+1 234 567 890"> <i class="fa fa-comment-o"></i><em>Text Us</em> </a>
-        <a class="menu-item close-menu" href="#"> <i class="fa fa-times"></i><em>Close</em> </a>
-    </div>
-</div>
-    
-<div class="right-menu dark-menu">
-    <div class="menu-scroll">
-        <a class="menu-item" href="https://www.facebook.com/enabled.labs/"> <i class="fa fa-facebook"></i><em>Like Us</em> </a>
-        <a class="menu-item" href="https://twitter.com/iEnabled"> <i class="fa fa-twitter"></i><em>Follow Us</em> </a>
-        <a class="menu-item" href="https://plus.google.com/u/1/100477648973116025417/posts"> <i class="fa fa-google-plus"></i><em>Follow Us</em></a>
-        <a class="menu-item" href="tel:+1 234 567 890"> <i class="fa fa-phone"></i><em>Call Us</em>  </a>
-        <a class="menu-item" href="sms:+1 234 567 890"> <i class="fa fa-comment-o"></i><em>Text Us</em>  </a>
-        <a class="menu-item" href="contact.html"> <i class="fa fa-envelope-o"></i><em>Contact</em>  </a>
-        <a class="menu-item" href="page-map.html"> <i class="fa fa-map-marker"></i><em>Find Us</em>  </a>
-        <a class="menu-item close-menu" href="#"> <i class="fa fa-times"></i><em>Close</em> </a>
-    </div>
-</div>    
-    
-<div class="share-bottom-tap-close"></div>
-<div class="share-bottom share-dark">
-    <h3>Share Page</h3>
-    <div class="share-socials-bottom">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.themeforest.net/">
-            <i class="fa fa-facebook facebook-color"></i>
-            Facebook
-        </a>
-        <a href="https://twitter.com/home?status=Check%20out%20ThemeForest%20http://www.themeforest.net">
-            <i class="fa fa-twitter twitter-color"></i>
-            Twitter
-        </a>
-        <a href="https://plus.google.com/share?url=http://www.themeforest.net">
-            <i class="fa fa-google-plus google-color"></i>
-            Google
-        </a>
-        <a href="https://pinterest.com/pin/create/button/?url=http://www.themeforest.net/&media=https://0.s3.envato.com/files/63790821/profile-image.jpg&description=Themes%20and%20Templates">
-            <i class="fa fa-pinterest-p pinterest-color"></i>
-            Pinterest
-        </a>
-        <a href="sms:">
-            <i class="fa fa-comment-o sms-color"></i>
-            Text
-        </a>
-        <a href="mailto:?&subject=Check this page out!&body=http://www.themeforest.net">
-            <i class="fa fa-envelope-o mail-color"></i>
-            Email
-        </a>
-        <div class="clear"></div>
-    </div>
-</div> 
+<a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>HAUT</a>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="cordova_plugins.js"></script>
 
+<script type="text/javascript">
+	app.initialize();
+</script>	
+<script type="text/javascript">
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady()
+    {
+        screen.lockOrientation('portrait');
+    }
+	
+</script>
 </body>
-
