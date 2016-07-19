@@ -4014,6 +4014,7 @@ calendar*{
 .page-login .login-create:hover,
 .page-login .login-already:hover{
     color:white;
+	font-weight:500;
     transition:all 250ms ease;
 }
 
@@ -4036,7 +4037,7 @@ calendar*{
     width:50%;
     float:right;
     text-align:right;
-    font-size:12px;
+    font-size:11px;
     color:white;
     margin-bottom:30px;
     transition:all 250ms ease;
@@ -4046,7 +4047,7 @@ calendar*{
     width:50%;
     float:left;
     text-align:left;
-    font-size:12px;
+    font-size:11px;
     color:white;
     margin-bottom:30px;
     transition:all 250ms ease;

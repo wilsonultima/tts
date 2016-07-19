@@ -1,0 +1,48 @@
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+.facebook-colorself {
+    background-color: rgba(59,89,152,1);
+	color: #FFFFFF;
+}
+
+.google-colorself {
+    background-color: rgba(211,72,54,1);
+    color: #FFFFFF;
+}
+
+.facebook-colorself:hover {
+    background-color: rgba(99,129,192,1);
+}
+
+.google-colorself:hover {
+    background-color: rgba(251,112,94,1);
+}
+
+.button-greenself:hover {
+    background-color: rgba(40,195,40,1);
+}
+
+.button-greenself {
+    background-color: rgba(0,155,0,1);
+	color: #FFFFFF;
+}
+
+.button-redself:hover {
+    background-color: rgba(232,97,83,1);
+}
+
+.button-redself {
+    background-color: rgba(192,57,43,1);
+	color: #FFFFFF;
+}
+
+.handhover:hover {
+ cursor:pointer;
+}
+

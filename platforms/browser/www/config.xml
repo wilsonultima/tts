@@ -10,7 +10,7 @@
     <description>Time To Sports Trouver une partie!</description>
     <author email="info@ultimawebcreation.ca" href="http://www.ultimawebcreation.com">Ultima Web Creation</author>
     <content src="index.html" />
-    <icon src="icon.png" />
+    <icon src="iconapp.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

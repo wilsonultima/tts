@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
 <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
 
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
@@ -46,15 +47,14 @@
                     <a href="#" class="pageapp-login-logo"></a>
                     <div class="spacer"></div>
                     <div class="cover-field">
-                        <p style="color:white; font-weight:500;" align="center">Veuillez entrer votre adresse courriel pour récuperer votre mot de passe.</p>
-
+                        <p style="color:white; font-weight:500;" align="center">Veuillez entrer votre adresse courriel ou<br> votre nom d'utilisateur pour récuperer<br> le mot de passe.</p>
                     </div>
                     <div class="cover-field">
                         <i class="fa fa-envelope-o"></i>
-                        <input type="text" value="Adresse courriel">
+                        <input id='retrieve_email' type="text" placeholder="Adresse courriel ou nom d'utilisateur" required>
                     </div>
-                    <a href="#" class="pageapp-login-button button button-green"><i class="fa fa-arrow-right"></i>Envoyer</a>
-					<a href="login.html" class="pageapp-login-button button button-red"><i class="fa fa-rotate-left"></i>Retour</a>
+					<button type="submit"  class="pageapp-login-button button button-greenself handhover"><i class="fa fa-arrow-right"></i>Envoyer</button>
+					<a href="login.html" class="pageapp-login-button button button-redself handhover"><i class="fa fa-rotate-left"></i>Retour</a>
                 </div>
 
             </div>

@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
 <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
 
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
@@ -31,52 +32,41 @@
 <div class="gallery-fix"></div>
 <div class="share-bottom-tap-close"></div>
 <div class="menu-tap-close light-close"></div> 
-    
-
 <div id="page-content">
     <div id="page-content-scroll">
-
         <div class="cover-page cover-image" style="background-image:url(images/pictures/1.jpg);">
-         
-			
 			<div class="cover-page-content">
-
                 <div class="pageapp-login">
                     <a class="pageapp-login-logo"></a>
                     <div class="spacer"></div>
-                    <div class="cover-field">
-                        <i class="fa fa-user"></i>
-                        <input type="text" value="Nom d'utilisateur">
-                    </div>                
-                    <div class="cover-field full-bottom">
-                        <i class="fa fa-lock"></i>
-                        <input type="password" value="Mot de passe">
-                    </div>
+					<form id='log_form' >
+						<div class="cover-field">
+							<i class="fa fa-user"></i>
+							<input id="log_email" type="text" placeholder="Nom d'utilisateur ou adresse courriel" required>
+						</div>                
+						<div class="cover-field full-bottom">
+							<i class="fa fa-lock"></i>
+							<input id='password' type="password" placeholder="*************" required>
+						</div>
 					<div class="page-login full-bottom">
 					<a href="retrieve.html" class="login-forgot"><i class="fa fa-eye"></i>Mot de passe oublié</a>
 					<a href="signup.html" class="login-create">Créer un compte<i class="fa fa-user"></i></a></div>
-                    <a href="menu.html" class="pageapp-login-button button button-green"><i class="fa fa-arrow-right"></i>Se connecter</a>
-                   
-                    <a href="#" class="pageapp-login-button button facebook-color"><i class="fa fa-facebook"></i>Facebook</a>
-					
-                    <a href="#" class="pageapp-login-button button google-color"><i class="fa fa-google-plus"></i>Google</a>
+                    <button type='submit' class="pageapp-login-button button button-greenself handhover"><i class="fa fa-arrow-right"></i>Se connecter</button>
+					</form>
+                    <a id='FBConnect' class="pageapp-login-button button facebook-colorself handhover"><i class="fa fa-facebook"></i>Facebook</a>
+                    <a id='GPConnect' class="pageapp-login-button button google-colorself handhover"><i class="fa fa-google-plus"></i>Google</a>
                 </div>
-
             </div>
-
             <div class="overlay"></div>
-
         </div>
     </div>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="cordova_plugins.js"></script>
-
 <script type="text/javascript">
 	app.initialize();
 </script>	
 <script type="text/javascript">
-
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady()
     {

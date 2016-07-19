@@ -11,12 +11,12 @@
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
 <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
 
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 </head>
-
 
 <script type="text/javascript">
         $(window).load(function() {
@@ -47,30 +47,31 @@
                     <div class="spacer"></div>
                     <div class="cover-field">
                         <i class="fa fa-user"></i>
-                        <input type="text" value="Nom d'utilisateur">
+                        <input id='username_form' name='username' type="text" placeholder="Nom d'utilisateur" required >
                     </div>                    
                     <div class="cover-field">
                         <i class="fa fa-envelope-o"></i>
-                        <input type="text" value="Adresse courriel">
+                        <input id='courriel_form' name='courriel' type="text" placeholder="Adresse courriel"  type="email" required >
                     </div>                
                     <div class="cover-field">
                         <i class="fa fa-lock"></i>
-                        <input type="password" value="passsword">
+                        <input id='password' type="password" placeholder="*************">
                     </div>                
                     <div class="cover-field full-bottom">
                         <i class="fa fa-lock"></i>
-                        <input type="password" value="passsword">
+                        <input id="confirm_password" type="password" placeholder="*************">
                     </div>
+					<input type="password" name="form_pw_md5" style="display:none;"  class="form-control input-lg c-square" id="md5_pass_new" placeholder="" >
 					<div class="container switch-box">
-						<h4 style="color:white; font-weight:400;" align="center">Accepter les <a href="#" style="color:white; font-weight:500;">termes et conditions<a></h4>
+						<h4 style="color:white; font-weight:400; font-size:14px;" align="center">Accepter les <a href="#" style="color:white; font-weight:500;">termes et conditions<a></h4>
 						<a href="#" class="switch-icon switch-1">
 							<em><i class="fa fa-check"></i></em>
 							<span></span>
 							<em><i class="fa fa-times"></i></em>
 						</a>
 					</div>
-                    <a href="#" class="pageapp-login-button button button-green"><i class="fa fa-arrow-right"></i>Créer votre compte</a>
-					<a href="login.html" class="pageapp-login-button button button-red"><i class="fa fa-rotate-left"></i>Retour</a>
+                    <a href="#" class="pageapp-login-button button button-greenself"><i class="fa fa-arrow-right"></i>Créer votre compte</a>
+					<a href="login.html" class="pageapp-login-button button button-redself"><i class="fa fa-rotate-left"></i>Retour</a>
                 </div>
 
             </div>
@@ -91,7 +92,7 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady()
     {
-        screen.lockOrientation('portrait');
+        screen.lockOrientation("portrait");
     }
 </script>
 </body>
