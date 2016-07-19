@@ -57,21 +57,21 @@
                         <i class="fa fa-lock"></i>
                         <input id='password' type="password" placeholder="*************">
                     </div>                
-                    <div class="cover-field full-bottom">
+                    <div class="cover-field">
                         <i class="fa fa-lock"></i>
                         <input id="confirm_password" type="password" placeholder="*************">
                     </div>
 					<input type="password" name="form_pw_md5" style="display:none;"  class="form-control input-lg c-square" id="md5_pass_new" placeholder="" >
-					<div class="container switch-box">
-						<h4 style="color:white; font-weight:400; font-size:14px;" align="center">Accepter les <a href="#" style="color:white; font-weight:500;">termes et conditions<a></h4>
+					<div class="container switch-box" style="margin-bottom: 10px;">
+						<h4 style="color:white; font-weight:400; font-size:14px;" align="center">Accepter les <a href="#" class="handhover" style="color:white; font-weight:500;">termes et conditions<a></h4>
 						<a href="#" class="switch-icon switch-1">
 							<em><i class="fa fa-check"></i></em>
 							<span></span>
 							<em><i class="fa fa-times"></i></em>
 						</a>
 					</div>
-                    <a href="#" class="pageapp-login-button button button-greenself"><i class="fa fa-arrow-right"></i>Créer votre compte</a>
-					<a href="login.html" class="pageapp-login-button button button-redself"><i class="fa fa-rotate-left"></i>Retour</a>
+                    <a href="#" class="pageapp-login-button button button-greenself handhover"><i class="fa fa-arrow-right"></i>Créer votre compte</a>
+					<a href="login.html" class="pageapp-login-button button button-redself handhover"><i class="fa fa-rotate-left"></i>Retour</a>
                 </div>
 
             </div>
@@ -92,7 +92,7 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady()
     {
-        screen.lockOrientation("portrait");
+        screen.lockOrientation('portrait');
     }
 </script>
 </body>
